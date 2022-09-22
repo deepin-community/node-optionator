@@ -1,0 +1,13 @@
+version=4
+opts=\
+repacksuffix=+dfsg,\
+dversionmangle=auto,\
+filenamemangle=s%(?:.*?/)v?(@ANY_VERSION@@ARCHIVE_EXT@)%@PACKAGE@-$1% \
+ https://github.com/gkz/optionator/tags (?:.*?/)v?@ANY_VERSION@@ARCHIVE_EXT@ group
+
+opts=\
+ctype=nodejs,\
+component=word-wrap,\
+dversionmangle=auto,\
+filenamemangle=s%(?:.*?/)v?(@ANY_VERSION@@ARCHIVE_EXT@)%node-word-wrap-$1% \
+https://github.com/jonschlinkert/word-wrap/tags (?:.*?/)v?@ANY_VERSION@@ARCHIVE_EXT@ checksum

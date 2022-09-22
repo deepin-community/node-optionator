@@ -1,0 +1,57 @@
+node-optionator (0.9.1+dfsg+~cs1.2.3-1) unstable; urgency=medium
+
+  * Team upload
+  * MA: foreign
+  * Improve build process
+  * Remove depends on wordwrap
+  * Fix uscan
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 05 Oct 2021 17:26:43 +0000
+
+node-optionator (0.9.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Add ctype=nodejs to component(s)
+  * Use dh-sequence-nodejs
+  * Remove dependency to nodejs
+  * New upstream version 0.9.1+dfsg
+  * Install word-wrap
+  * Refresh patch
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 26 Dec 2020 09:51:21 +0100
+
+node-optionator (0.8.3+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Replace old-style mocha files (Closes: #952197)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 24 Feb 2020 09:43:00 +0100
+
+node-optionator (0.8.3+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Use pkg-js-tools auto install (≥ 0.26~)
+  * Enable upstream test
+  * Refresh patch, use nodepath to find livescript
+  * Refresh copyright
+  * Embed Node.js module: word-wrap
+  * New upstream version 0.8.3+dfsg
+  * Update VCS fields to salsa
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 29 Jan 2020 14:01:54 +0100
+
+node-optionator (0.8.2+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #840453)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 13 Oct 2016 12:30:52 +0530

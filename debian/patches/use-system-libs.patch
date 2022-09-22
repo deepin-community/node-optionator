@@ -1,0 +1,21 @@
+Description: use system libs
+Author: Pirate Praveen <praveen@debian.org>
+Forwarded: not-needed
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2020-12-26
+
+--- a/Makefile
++++ b/Makefile
+@@ -3,9 +3,9 @@
+ SRC = $(shell find src -name "*.ls" -type f | sort)
+ LIB = $(SRC:src/%.ls=lib/%.js)
+ 
+-LS = node_modules/livescript
+-LSC = node_modules/.bin/lsc
+-MOCHA = node_modules/.bin/mocha
++LS = $(shell nodepath livescript)
++LSC = /usr/bin/lsc
++MOCHA = /usr/bin/mocha
+ 
+ package.json: package.json.ls
+ 	$(LSC) --compile package.json.ls

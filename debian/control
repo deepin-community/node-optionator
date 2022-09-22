@@ -1,0 +1,31 @@
+Source: node-optionator
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , livescript
+ , mocha <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-optionator
+Vcs-Git: https://salsa.debian.org/js-team/node-optionator.git
+Homepage: https://github.com/gkz/optionator
+Rules-Requires-Root: no
+
+Package: node-optionator
+Architecture: all
+Depends: ${misc:Depends}
+ , node-deep-is
+ , node-fast-levenshtein
+ , node-levn
+ , node-prelude-ls
+ , node-type-check
+Provides: ${nodejs:Provides}
+Multi-Arch: foreign
+Description: option parsing and help generation
+ Optionator is a JavaScript option parsing and help generation library used by
+ eslint, Grasp, LiveScript, esmangle, escodegen, and many more.
+ .
+ Node.js is an event-based server-side JavaScript engine.
